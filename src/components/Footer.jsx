@@ -12,11 +12,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-1 md:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <img src="/logo.jpg" alt="Logo" className="h-12 w-12 rounded-sm object-cover" />
-              <span className="text-white font-bold text-xl tracking-wide uppercase">Estudio Alonso<br/><span className="text-accent text-sm">Penalista</span></span>
+              <img src="/logo.jpg" alt="Logo" className="h-12 w-12 rounded-sm object-cover grayscale" />
+              <span className="text-white font-bold font-serif text-xl tracking-wide uppercase">Estudio Alonso<br/><span className="text-accent font-sans text-sm tracking-widest">Penalista</span></span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Especialistas en derecho penal brindando una defensa sólida, estratégica y confidencial para proteger tus derechos.
+              Especialistas en derecho penal brindando una defensa sólida, estratégica y confidencial para proteger sus derechos con máxima eficacia.
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-300 hover:bg-accent hover:text-primary transition-all">

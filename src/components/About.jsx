@@ -24,9 +24,9 @@ const Counter = ({ end, label }) => {
   }, [inView, end]);
 
   return (
-    <div ref={ref} className="text-center p-6 bg-white shadow-lg rounded-lg border-b-4 border-accent">
-      <h3 className="text-4xl font-bold text-primary mb-2">+{count}</h3>
-      <p className="text-gray-600 font-medium uppercase tracking-wider text-sm">{label}</p>
+    <div ref={ref} className="text-center p-6 bg-white shadow-md rounded-sm border-b-4 border-accent">
+      <h3 className="text-4xl font-bold font-serif text-primary mb-2">+{count}</h3>
+      <p className="text-gray-600 font-medium uppercase tracking-wider text-xs">{label}</p>
     </div>
   );
 };
@@ -44,20 +44,20 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="space-y-6"
           >
-            <div className="inline-block px-3 py-1 bg-accent/20 text-primary font-semibold rounded-full text-sm mb-2">
+            <div className="inline-block px-4 py-1 border border-accent/50 text-primary font-semibold rounded-sm text-sm mb-2 uppercase tracking-wide">
               Nuestra Firma
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold text-primary leading-tight">
-              Excelencia y ética en la defensa de tus derechos.
+            <h2 className="text-3xl md:text-5xl font-bold font-serif text-primary leading-tight">
+              Excelencia y ética en la defensa de sus derechos.
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed">
               En Estudio Alonso Penalista, comprendemos que enfrentar un proceso penal es uno de los momentos más críticos en la vida de una persona. Por ello, brindamos una defensa férrea, estratégica y absolutamente confidencial.
             </p>
             <p className="text-gray-600 text-lg leading-relaxed">
-              Nuestra experiencia nos permite analizar cada caso con rigor técnico, anticiparnos a los escenarios posibles y diseñar la mejor estrategia jurídica para proteger tu libertad y patrimonio.
+              Nuestra experiencia nos permite analizar cada caso con rigor técnico, anticiparnos a los escenarios posibles y diseñar la mejor estrategia jurídica para proteger su libertad y su patrimonio.
             </p>
             <div className="pt-4">
-              <img src="/logo.jpg" alt="Firma" className="h-12 opacity-80 mix-blend-multiply" />
+              <img src="/logo.jpg" alt="Firma" className="h-12 opacity-80 mix-blend-multiply grayscale" />
             </div>
           </motion.div>
           

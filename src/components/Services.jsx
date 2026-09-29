@@ -53,7 +53,7 @@ export default function Services() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-5xl font-bold text-primary mb-4"
+            className="text-3xl md:text-5xl font-bold font-serif text-primary mb-4"
           >
             Áreas de Práctica
           </motion.h2>
@@ -73,12 +73,12 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="bg-light p-8 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-transparent hover:border-accent/30 group"
+              className="bg-light p-8 rounded-sm shadow-sm hover:shadow-lg transition-all duration-300 border border-transparent hover:border-accent/30 group"
             >
-              <div className="w-16 h-16 bg-primary/5 rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-accent transition-colors duration-300 mb-6">
+              <div className="w-14 h-14 bg-primary text-white rounded-sm flex items-center justify-center mb-6 group-hover:bg-accent group-hover:text-primary transition-colors duration-300">
                 {service.icon}
               </div>
-              <h3 className="text-xl font-bold text-primary mb-3">{service.title}</h3>
+              <h3 className="text-xl font-bold font-serif text-primary mb-3">{service.title}</h3>
               <p className="text-gray-600 leading-relaxed text-sm">
                 {service.description}
               </p>

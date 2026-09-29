@@ -4,24 +4,24 @@ import { ChevronDown } from 'lucide-react';
 
 const faqs = [
   {
-    question: '¿Cómo solicito una consulta?',
-    answer: 'Puede solicitar una consulta completando el formulario de contacto al final de esta página, enviándonos un correo electrónico o comunicándose directamente vía WhatsApp.'
+    question: '¿Cómo solicito una consulta profesional?',
+    answer: 'Puede solicitar una entrevista completando el formulario de contacto al final de esta página, enviándonos un correo electrónico o comunicándose directamente vía telefónica o WhatsApp.'
   },
   {
     question: '¿Atienden urgencias penales?',
-    answer: 'Sí, disponemos de atención prioritaria para urgencias penales, como detenciones o allanamientos, las 24 horas del día. Recomendamos contactarnos por teléfono o WhatsApp para estos casos.'
+    answer: 'Sí, disponemos de atención prioritaria para urgencias penales, como detenciones o allanamientos, las 24 horas del día. Recomendamos contactarnos por teléfono para estos casos críticos.'
   },
   {
     question: '¿La primera consulta tiene costo?',
-    answer: 'La primera evaluación inicial del caso puede tener un costo que luego se descuenta de los honorarios si decide tomar nuestros servicios. Por favor contáctenos para más detalles.'
+    answer: 'La evaluación técnica inicial del caso tiene honorarios estipulados de consulta profesional, los cuales se descuentan si decide encomendarnos su defensa judicial. Contáctenos para más detalles.'
   },
   {
     question: '¿Qué documentación debo llevar a la primera reunión?',
-    answer: 'Es fundamental aportar cualquier notificación judicial, denuncia, copias de expedientes que posea y su documento de identidad. Si hay pruebas relevantes, también es recomendable aportarlas.'
+    answer: 'Es fundamental aportar cualquier notificación judicial, denuncia, copias de expedientes que posea y su documento de identidad. Si existen pruebas relevantes, también es indispensable aportarlas.'
   },
   {
-    question: '¿Cómo se manejan los honorarios?',
-    answer: 'Nuestros honorarios se establecen de forma transparente tras la primera consulta, evaluando la complejidad del caso y las etapas procesales. Ofrecemos convenios claros y facilidades de pago.'
+    question: '¿Cómo se manejan los honorarios profesionales?',
+    answer: 'Nuestros honorarios se establecen de forma transparente tras la primera consulta, evaluando la complejidad del caso y las etapas procesales correspondientes, siempre bajo acuerdos claros por escrito.'
   }
 ];
 
@@ -40,9 +40,9 @@ export default function FAQ() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-5xl font-bold text-primary mb-4"
+            className="text-3xl md:text-5xl font-bold font-serif text-primary mb-4"
           >
-            Preguntas Frecuentes
+            Consultas Frecuentes
           </motion.h2>
           <motion.div 
             initial={{ opacity: 0, scale: 0.8 }}
@@ -60,10 +60,10 @@ export default function FAQ() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="border border-gray-200 rounded-lg overflow-hidden"
+              className="border border-gray-200 rounded-sm overflow-hidden shadow-sm"
             >
               <button
-                className="w-full px-6 py-4 text-left bg-light hover:bg-gray-100 flex justify-between items-center focus:outline-none transition-colors"
+                className="w-full px-6 py-5 text-left bg-light hover:bg-gray-100 flex justify-between items-center focus:outline-none transition-colors"
                 onClick={() => toggleAccordion(index)}
               >
                 <span className="font-semibold text-primary text-lg">{faq.question}</span>
@@ -79,7 +79,7 @@ export default function FAQ() {
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <div className="px-6 py-4 bg-white text-gray-600 leading-relaxed border-t border-gray-200">
+                    <div className="px-6 py-5 bg-white text-gray-600 leading-relaxed border-t border-gray-200">
                       {faq.answer}
                     </div>
                   </motion.div>

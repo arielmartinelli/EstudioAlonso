@@ -5,7 +5,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Logic to send form data
-    alert('Consulta enviada con éxito. Nos pondremos en contacto a la brevedad.');
+    alert('Consulta enviada con éxito. Nos pondremos en contacto a la mayor brevedad posible.');
   };
 
   return (
@@ -16,9 +16,9 @@ export default function Contact() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-5xl font-bold text-primary mb-4"
+            className="text-3xl md:text-5xl font-bold font-serif text-primary mb-4"
           >
-            Contacto
+            Contacto Institucional
           </motion.h2>
           <motion.div 
             initial={{ opacity: 0, scale: 0.8 }}
@@ -36,38 +36,38 @@ export default function Contact() {
             viewport={{ once: true }}
             className="space-y-8"
           >
-            <h3 className="text-2xl font-bold text-primary mb-6">Información de Contacto</h3>
+            <h3 className="text-2xl font-bold font-serif text-primary mb-6">Canales de Atención</h3>
             <p className="text-gray-600 mb-8 leading-relaxed">
-              Estamos a tu disposición para brindarte asesoramiento inmediato. Comunicate con nosotros o dejá tu mensaje y te contactaremos a la brevedad.
+              El estudio se encuentra a su entera disposición para brindarle el asesoramiento jurídico requerido. Comuníquese por nuestras vías oficiales o deje su mensaje detallado.
             </p>
             
-            <div className="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm">
-              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary flex-shrink-0">
-                <Phone />
+            <div className="flex items-start gap-4 p-5 bg-white rounded-sm shadow-sm border border-gray-100">
+              <div className="w-12 h-12 bg-primary text-white rounded-sm flex items-center justify-center flex-shrink-0">
+                <Phone size={20} />
               </div>
               <div>
-                <h4 className="font-bold text-primary">Teléfono / WhatsApp</h4>
+                <h4 className="font-bold text-primary text-sm uppercase tracking-wider mb-1">Teléfono / WhatsApp</h4>
                 <p className="text-gray-600">351 618-6694</p>
               </div>
             </div>
 
-            <div className="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm">
-              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary flex-shrink-0">
-                <Mail />
+            <div className="flex items-start gap-4 p-5 bg-white rounded-sm shadow-sm border border-gray-100">
+              <div className="w-12 h-12 bg-primary text-white rounded-sm flex items-center justify-center flex-shrink-0">
+                <Mail size={20} />
               </div>
               <div>
-                <h4 className="font-bold text-primary">Email</h4>
+                <h4 className="font-bold text-primary text-sm uppercase tracking-wider mb-1">Correo Electrónico</h4>
                 <p className="text-gray-600">contacto@estudioalonso.com</p>
               </div>
             </div>
 
-            <div className="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm">
-              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary flex-shrink-0">
-                <MapPin />
+            <div className="flex items-start gap-4 p-5 bg-white rounded-sm shadow-sm border border-gray-100">
+              <div className="w-12 h-12 bg-primary text-white rounded-sm flex items-center justify-center flex-shrink-0">
+                <MapPin size={20} />
               </div>
               <div>
-                <h4 className="font-bold text-primary">Dirección</h4>
-                <p className="text-gray-600">Av. Roque Sáenz Peña 215, X5105<br/>Villa Allende, Córdoba</p>
+                <h4 className="font-bold text-primary text-sm uppercase tracking-wider mb-1">Dirección</h4>
+                <p className="text-gray-600 leading-relaxed">Av. Roque Sáenz Peña 215, X5105<br/>Villa Allende, Córdoba</p>
               </div>
             </div>
           </motion.div>
@@ -77,26 +77,26 @@ export default function Contact() {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-white p-8 rounded-xl shadow-lg border-t-4 border-accent"
+            className="bg-white p-8 rounded-sm shadow-lg border-t-4 border-accent"
           >
-            <h3 className="text-2xl font-bold text-primary mb-6">Envíanos tu Consulta</h3>
+            <h3 className="text-2xl font-bold font-serif text-primary mb-6">Solicitud de Entrevista</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Nombre Completo</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Nombre y Apellido</label>
                 <input 
                   type="text" 
                   required
-                  className="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
-                  placeholder="Ej. Juan Pérez"
+                  className="w-full px-4 py-3 rounded-sm border border-gray-300 focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-all bg-gray-50"
+                  placeholder="Ingrese su nombre completo"
                 />
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Correo Electrónico</label>
                   <input 
                     type="email" 
                     required
-                    className="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 rounded-sm border border-gray-300 focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-all bg-gray-50"
                     placeholder="ejemplo@correo.com"
                   />
                 </div>
@@ -105,26 +105,26 @@ export default function Contact() {
                   <input 
                     type="tel" 
                     required
-                    className="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
-                    placeholder="Tu número de contacto"
+                    className="w-full px-4 py-3 rounded-sm border border-gray-300 focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-all bg-gray-50"
+                    placeholder="Número de contacto"
                   />
                 </div>
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Mensaje (Breve descripción del caso)</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Motivo de la consulta</label>
                 <textarea 
                   required
-                  rows="4"
-                  className="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all resize-none"
-                  placeholder="Escribí tu mensaje aquí..."
+                  rows="5"
+                  className="w-full px-4 py-3 rounded-sm border border-gray-300 focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-all resize-none bg-gray-50"
+                  placeholder="Describa brevemente su situación..."
                 ></textarea>
               </div>
               <button 
                 type="submit"
-                className="w-full bg-primary text-white font-bold py-4 rounded hover:bg-primary/90 transition-colors flex items-center justify-center gap-2 group"
+                className="w-full bg-primary text-white font-bold py-4 rounded-sm hover:bg-primary/90 transition-colors flex items-center justify-center gap-3 group uppercase tracking-widest text-sm"
               >
-                <span>Enviar Consulta</span>
-                <Send size={18} className="group-hover:translate-x-1 transition-transform" />
+                <span>Enviar Solicitud</span>
+                <Send size={16} className="group-hover:translate-x-1 transition-transform" />
               </button>
             </form>
           </motion.div>
